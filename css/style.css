@@ -1,0 +1,98 @@
+/*ESTILO PARA MI PAGINA WEB*/
+body{
+    background-color: whitesmoke;
+    font-family: 'fantasy'; /* Fuente principal */
+    margin: 0; /* Elimina margenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total de los elementos */
+}
+
+.fijar {
+    position: sticky; /* Hace que el header se quede fijo al hacer scroll */
+    top: 0;  /* Posicion desde la parte superior */
+    left: 0;  /* Posicion desde la parte izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 100; /* Asegura que el header este por encima de otros elementos */
+}
+
+header {
+    font-family: 'Courier New'; /* Cambio de fuente para header */
+    font-style: italic; /* Estilo de fuente italic */
+    display: flex; /* Se usa flex para alinear elementos */
+    background-color: #8a0051; /* Color de fondo del header */
+    color: white; /* Color de texto blanco */
+    align-items: center; /* Alineacion vertical centrada */
+    justify-content: center; /* Alineacion horizontal centrada */
+    padding: 10px 20px; /* Espaciado interno */
+}
+.logo {
+    height: 150px; /* Tamaño del logo */
+}
+
+.masvendidos{
+    font-style: oblique;
+    color: rgb(146, 44, 44); /* Color de texto blanco */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Alineacion centrada */
+}
+
+.carousel{ 
+    width: 70%; /* Ancho del carrusel */
+    margin: 0 auto; /* Centrado horizontal */
+    margin-bottom: 40px; /* Espacio inferior */
+    object-fit: cover;
+}
+
+.noticiasmoda{
+    background-color: #c05e14; /* Color de fondo de la seccion de tendencias */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen externo */
+}
+
+.tendencias{
+    background-color: #E7E9EB; /* Color de fondo de la seccion de tendencias */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen externo */
+    text-align: center;
+}
+
+.tecnologia{
+    background-color: #E7E9EB; /* Color de fondo de la seccion de tendencias */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen externo */
+    text-align: center;
+}
+
+.blue-bg{
+    background-color: #4a75d1; /* Color de fondo del footer */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Alineacion centrada */
+    padding: 10px; /* Espaciado interno */
+    bottom: 0; /* Pegado al fondo de la pagina */
+    width: 100%; /* Ancho completo */
+}
+
+@media (min-width: 991px) /*Para pantallas medianas y grandes*/
+{  
+    .logo {
+        height: 150px; /* Tamaño del logo */
+    }
+    
+    h1 {
+        font-size: 2rem; /* Tamaño del titulo principal */
+    }
+    
+    .carousel-item img {
+        width: 50% !important; /* Ancho del carrusel ajustado */
+    }
+    
+    .noticiasmoda {
+        display: grid; /* Usar grid para el diseño */
+        grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+        gap: 40px; /* Espacio entre columnas */
+    }
+    
+    .noticiasmoda h2 {
+        grid-column: 1 / -1; /* El titulo ocupa ambas columnas */
+    }
+}

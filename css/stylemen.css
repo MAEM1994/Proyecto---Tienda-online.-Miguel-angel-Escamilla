@@ -1,0 +1,78 @@
+/*ESTILO PARA MI PAGINA WEB*/
+body{
+    background-color: whitesmoke; /* Color de fondo de la pagina */
+    font-family: 'fantasy'; /* Fuente principal */
+    margin: 0; /* Elimina margenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el tamaño total de los elementos */
+}
+
+.fijar {
+    position: sticky; /* Hace que el header se quede fijo al hacer scroll */
+    top: 0;  /* Posicion desde la parte superior */
+    left: 0;  /* Posicion desde la parte izquierda */
+    width: 100%; /* Ancho completo */
+    z-index: 100; /* Asegura que el header este por encima de otros elementos */
+}
+
+header {
+    font-family: 'Courier New'; /* Cambio de fuente para header */
+    font-style: italic; /* Estilo de fuente italic */
+    display: flex; /* Se usa flex para alinear elementos */
+    background-color: #8a0051; /* Color de fondo del header */
+    color: white; /* Color de texto blanco */
+    align-items: center; /* Alineacion vertical centrada */
+    justify-content: center; /* Alineacion horizontal centrada */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+.logo {
+    height: 150px; /* Tamaño del logo */
+}
+
+#catalogomen {
+    display: grid; /* Usar grid para el diseño del catálogo */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño responsivo */
+    gap: 20px; /* Espacio entre las prendas */
+    padding: 20px; /* Espaciado interno */
+}
+
+.prenda {
+    border: 1px solid #ccc; /* Borde de la prenda */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    text-align: center; /* Alineacion centrada */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra de cajas */
+}
+
+.prenda img {
+    height: 400px; /* Establece una altura fija para todas las imágenes */
+    max-width: 100%; /* Ancho maximo responsivo */
+    border-radius: 5px; /* Bordes redondeados en la imagen */
+}
+
+.prenda h2 {
+    font-size: 1.2em; /* Tamaño de fuente del titulo */
+    margin: 10px 0; /* Tamaño de margenes */
+}
+
+.prenda .precio {
+    font-weight: bold; /* Negrita para el precio */
+    color: #e60023; /* Color de precio */
+}
+
+.blue-bg{
+    background-color: #4a75d1; /* Color de fondo del footer */
+    color: white; /* Color de texto blanco */
+    text-align: center; /* Alineacion centrada */
+    padding: 10px; /* Espaciado interno */
+    bottom: 0; /* Pegado al fondo de la pagina */
+    width: 100%; /* Ancho completo */
+}
+
+@media (min-width: 991px) /*Para pantallas medianas y grandes*/
+{  
+    .logo {
+        height: 150px; /* Tamaño del logo */
+    }
+}
