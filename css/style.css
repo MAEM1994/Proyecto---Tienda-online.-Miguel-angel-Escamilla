@@ -96,3 +96,15 @@ header {
         grid-column: 1 / -1; /* El titulo ocupa ambas columnas */
     }
 }
+
+@media (max-width: 768px) 
+{
+  .noticiasmoda .tendencias img,
+  .noticiasmoda .tecnologia img 
+  {
+    /* Opción A: Tamaño minúsculo */
+    width: 30px !important;  /* Cambiado a 20px para pantallas pequeñas */
+    height: auto !important;  /* Mantener proporción */
+    min-height: 30px !important; /* Altura mínima para asegurar visibilidad */
+  }
+}
